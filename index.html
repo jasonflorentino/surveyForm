@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Survey Form!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="main">
+            <div id="title-div">
+                <h1 id="title">How did I do on this form?</h1>
+                <p id="description">Thanks for having a gander. I hope it passes muster.</p>
+            </div>
+            <div id="survey">
+                <form id="survey-form">
+                    <div id="form-group" class="namee">
+                        <label for="name" id="name-label">Name</label></br>
+                        <input id="name" type="text" name="name" placeholder="Enter your name" required></br>
+                    </div>
+                    <div id="form-group" class="emaill">
+                        <label for="email" id="email-label">Email</label></br>
+                        <input id="email" type="email" name="email" placeholder="Enter your email" required></br>
+                    </div>
+                    <div id="form-group" class="agee">
+                        <label for="number" id="number-label">Age</label></br>
+                        <input id="number" type="number" name="age" min="18" max="99" placeholder="Age"></br>
+                    </div>
+                    <div id="form-group" class="dropdownn">
+                        <label for="dropdown" id="dropdown-label">How neat is this?</label></br>
+                        <select id="dropdown" name="dropdown">
+                            <option value="test">This</option>
+                            <option value="test">Is</option>
+                            <option value="test">Pretty</option>
+                            <option value="test">Neat</option>
+                        </select></br>
+                    </div>
+                    <div id="form-group" class="bulletss">
+                        <span>Pick one:</span></br>
+                        <label for="bullet1"><input id="bullet1" type="radio" name="bullets" value="good" checked> Good</label></br>
+                        <label for="bullet2"><input id="bullet2" type="radio" name="bullets" value="better"> Better</label></br>
+                        <label for="bullet3"><input id="bullet3" type="radio" name="bullets" value="best"> Best</label></br>
+                    </div>
+                    <div id="form-group" class="checkss">
+                        <span>Things I could improve:</span></br>
+                        <label for="check1"><input id="check1" type="checkbox" name="checkboxes" value="HTML" checked> HTML</label></br>
+                        <label for="check2"><input id="check2" type="checkbox" name="checkboxes" value="CSS"> CSS</label></br>
+                        <label for="check3"><input id="check3" type="checkbox" name="checkboxes" value="JavaScript"> JavaScript</label></br>
+                        <label for="check4"><input id="check4" type="checkbox" name="checkboxes" value="everything"> Everything, of course!</label><br>
+                    </div>
+                    <div id="form-group" class="commentss">
+                        <label for="comments">Do you have any additional comments?</label></br>
+                        <textarea id="comments" name="comments" rows="4" cols="50">Please enter any comments you have here.</textarea></br>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
